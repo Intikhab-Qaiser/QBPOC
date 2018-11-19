@@ -31,6 +31,7 @@ namespace MyCompanyApp
                 MessageBox.Show("No reponse from QuickBook");
         }
 
+        // Prepare request XML
         private string PrepareRequestXml()
         {
             XmlDocument inputXMLDoc = new XmlDocument();
