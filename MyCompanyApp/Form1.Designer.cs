@@ -100,15 +100,15 @@
             // lblError
             // 
             this.lblError.ForeColor = System.Drawing.Color.Red;
-            this.lblError.Location = new System.Drawing.Point(28, 538);
+            this.lblError.Location = new System.Drawing.Point(28, 428);
             this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(1161, 95);
+            this.lblError.Size = new System.Drawing.Size(1734, 95);
             this.lblError.TabIndex = 21;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(74, 519);
+            this.dataGridView1.Location = new System.Drawing.Point(34, 579);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -120,7 +120,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1385, 985);
+            this.button1.Location = new System.Drawing.Point(1345, 1064);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(422, 57);
             this.button1.TabIndex = 23;
