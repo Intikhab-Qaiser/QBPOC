@@ -36,6 +36,9 @@
             this.txtCustName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblError = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -53,6 +56,7 @@
             this.Exit.Size = new System.Drawing.Size(312, 57);
             this.Exit.TabIndex = 19;
             this.Exit.Text = "Exit";
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
             // AddCustomer
             // 
@@ -101,11 +105,35 @@
             this.lblError.Size = new System.Drawing.Size(1161, 95);
             this.lblError.TabIndex = 21;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(74, 519);
+            this.dataGridView1.MultiSelect = false;
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowTemplate.Height = 40;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.ShowEditingIcon = false;
+            this.dataGridView1.Size = new System.Drawing.Size(1733, 449);
+            this.dataGridView1.TabIndex = 22;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1385, 985);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(422, 57);
+            this.button1.TabIndex = 23;
+            this.button1.Text = "Make Customer Inactive";
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1253, 658);
+            this.ClientSize = new System.Drawing.Size(1897, 1390);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Exit);
@@ -115,7 +143,10 @@
             this.Controls.Add(this.txtCustName);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Customer";
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,6 +162,8 @@
         private System.Windows.Forms.TextBox txtCustName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblError;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button1;
     }
 }
 
