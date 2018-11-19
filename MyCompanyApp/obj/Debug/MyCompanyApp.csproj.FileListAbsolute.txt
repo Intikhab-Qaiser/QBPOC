@@ -1,0 +1,13 @@
+C:\OneDrive\OneDrive - Accenture\Intikhab\Quickbook\MyCompanyApp\bin\Debug\MyCompanyApp.exe.config
+C:\OneDrive\OneDrive - Accenture\Intikhab\Quickbook\MyCompanyApp\bin\Debug\MyCompanyApp.exe
+C:\OneDrive\OneDrive - Accenture\Intikhab\Quickbook\MyCompanyApp\bin\Debug\MyCompanyApp.pdb
+C:\OneDrive\OneDrive - Accenture\Intikhab\Quickbook\MyCompanyApp\obj\Debug\MyCompanyApp.csprojAssemblyReference.cache
+C:\OneDrive\OneDrive - Accenture\Intikhab\Quickbook\MyCompanyApp\obj\Debug\Interop.QBXMLRP2Lib.dll
+C:\OneDrive\OneDrive - Accenture\Intikhab\Quickbook\MyCompanyApp\obj\Debug\MyCompanyApp.csproj.ResolveComReference.cache
+C:\OneDrive\OneDrive - Accenture\Intikhab\Quickbook\MyCompanyApp\obj\Debug\MyCompanyApp.Form1.resources
+C:\OneDrive\OneDrive - Accenture\Intikhab\Quickbook\MyCompanyApp\obj\Debug\MyCompanyApp.Properties.Resources.resources
+C:\OneDrive\OneDrive - Accenture\Intikhab\Quickbook\MyCompanyApp\obj\Debug\MyCompanyApp.csproj.GenerateResource.cache
+C:\OneDrive\OneDrive - Accenture\Intikhab\Quickbook\MyCompanyApp\obj\Debug\MyCompanyApp.csproj.CoreCompileInputs.cache
+C:\OneDrive\OneDrive - Accenture\Intikhab\Quickbook\MyCompanyApp\obj\Debug\MyCompanyApp.exe
+C:\OneDrive\OneDrive - Accenture\Intikhab\Quickbook\MyCompanyApp\obj\Debug\MyCompanyApp.pdb
+C:\OneDrive\OneDrive - Accenture\Intikhab\Quickbook\MyCompanyApp\obj\Debug\Interop.QBFC13Lib.dll
