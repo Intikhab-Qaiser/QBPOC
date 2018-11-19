@@ -67,7 +67,7 @@ namespace MyCompanyApp
             var responseXml = string.Empty;
             try
             {
-                MyQbXMLRP2.OpenConnection2("", "My Sample App", QBXMLRPConnectionType.localQBD);
+                MyQbXMLRP2.OpenConnection2("", "QBPOC", QBXMLRPConnectionType.localQBD);
                 ticket = MyQbXMLRP2.BeginSession("", QBFileMode.qbFileOpenDoNotCare);
                 responseXml = MyQbXMLRP2.ProcessRequest(ticket, xmlRequestSet);
             }
@@ -137,12 +137,12 @@ namespace MyCompanyApp
                 IMsgSetRequest requestMsgSet = sessionManager.CreateMsgSetRequest("UK", 13, 0);
                 requestMsgSet.Attributes.OnError = ENRqOnError.roeContinue;
 
-                sessionManager.OpenConnection("", "Quickbooks SDK Demo Test");
+                sessionManager.OpenConnection("", "QBPOC");
                 sessionManager.BeginSession("", ENOpenMode.omDontCare);
 
                 ICustomerQuery customerQueryRq = requestMsgSet.AppendCustomerQueryRq();
 
-                customerQueryRq.ORCustomerListQuery.CustomerListFilter.ActiveStatus.SetValue(ENActiveStatus.asAll);
+                customerQueryRq.ORCustomerListQuery.CustomerListFilter.ActiveStatus.SetValue(ENActiveStatus.asActiveOnly);
 
                 IMsgSetResponse responseMsgSet = sessionManager.DoRequests(requestMsgSet);
 
@@ -215,7 +215,7 @@ namespace MyCompanyApp
 
                 //Create the message set request object to hold our request
                 IMsgSetRequest requestMsgSet = sessionManager.CreateMsgSetRequest("UK", 13, 0);
-                requestMsgSet.Attributes.OnError = ENRqOnError.roeContinue;
+                requestMsgSet.Attributes.OnError = ENRqOnError.roeStop;
 
                 ICustomerMod CustomerModRq = requestMsgSet.AppendCustomerModRq();
                 //Set field value for ListID
@@ -228,7 +228,7 @@ namespace MyCompanyApp
                 //BuildCustomerModRq(requestMsgSet);
 
                 //Connect to QuickBooks and begin a session
-                sessionManager.OpenConnection("", "Sample Code from OSR");
+                sessionManager.OpenConnection("", "QBPOC");
                 sessionManager.BeginSession("", ENOpenMode.omDontCare);
 
                 //Send the request and get the response from QuickBooks
